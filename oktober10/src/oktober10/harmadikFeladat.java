@@ -7,13 +7,23 @@ public class harmadikFeladat {
 /*Módosítsuk az elozo programot úgy, hogy ne az 1 és 20 közé eso páros,
 hanem a paraméterként megadott két szám közé eso 3-mal osztható
 számokat listázzuk ki! */
-		int a = Integer.parseInt(args[0]);
-		int b = Integer.parseInt(args[1]);
-		int c = Integer.parseInt(args[2]);
+			if(args.length == 2) {
+			int tol = Integer.parseInt(args[0]);
+			int ig = Integer.parseInt(args[1]);
+			
+			System.out.println("3mal osztható számok: " + tol + " és " + ig + " között:");
+			for (int i = tol; i <= ig; i++) {
+				if(i %3 == 0) {
+					System.out.println(i + " ");
+				}
+			}
+		}else {
+			System.err.println("Két paramétert várok!");
+		}
 		
 		
 		
 		}
 	}
 
-}
+

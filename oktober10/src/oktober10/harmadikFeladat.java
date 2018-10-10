@@ -11,8 +11,9 @@ számokat listázzuk ki! */
 		int b = Integer.parseInt(args[1]);
 		int c = Integer.parseInt(args[2]);
 		
-		int i = a;
-		while  ()
+		
+		
+		}
 	}
 
 }
